@@ -53,4 +53,4 @@ TB checks these URLs.
 - https://johndoe%40example.com@autodiscover.example.co.uk/autodiscover/autodiscover.xml
 - https://johndoe%40example.com@example.co.uk/autodiscover/autodiscover.xml
 
-Ctrl+Shift+I opens TB's Developer tools console. hen watch the network tab to see the requests  /responses made.
+Ctrl+Shift+I opens TB's Developer tools console. Then watch the network tab to see the requests  /responses made.
