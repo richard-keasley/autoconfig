@@ -2,16 +2,16 @@
 isset($this) or die;
 
 $config = [
-	'EMAIL' => $this->emailaddress,
+	'EMAIL' => '{emailaddress}',
 	
 	'TEST' => [
 		'XML-POST' => 'request.xml',
 	],
 	
 	'INFO' => [
-		'DOMAIN' => $this->domain,
+		'DOMAIN' => '{domain}',
 		'DOMAINS' => ['example.uk', 'example.org.uk', 'example.co.uk'],
-		'NAME' => $this->name,
+		'NAME' => '{name}',
 		'DOCS' => [
 			'URL' => "https://example.co.uk/email",
 			'DESCR' => [

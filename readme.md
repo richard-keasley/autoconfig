@@ -22,6 +22,9 @@ and
 _autodiscover.example.co.uk/xxx/autodiscover.xml_ 
 will receive an appropriate reply, no matter what path is requested.
 
+Requests to _autoconfig.example.co.uk/xxx/config.htm_ 
+will reveal email settings.
+
 ## resources / further reading
 
 ### Documentation on building responses

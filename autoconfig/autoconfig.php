@@ -18,7 +18,6 @@ use basecamp\autoconfig\response;
 class autoconfig implements \stringable {
 	
 private $attributes = [];
-private $translate = [];
 
 function __construct($config='default') {
 	// get config
@@ -106,15 +105,17 @@ private function get_include($basename) {
 
 private function translate($string) {
 	$translate = [];
+	$pattern = '#\{(.+)\}#';
+	
 	foreach($this->translate_sub($this->config) as $key=>$val) {
+		$placeholder = preg_match($pattern, $val, $matches);
+		if($placeholder) {
+			$phkey = $matches[1] ?? null;
+			if($phkey) $val = $this->attributes[$phkey];
+		}
 		$translate["%{$key}%"] = $val;
 	}
-	/*
-	// ToDo: simpleXML doesn't specify UTF8
-	$pattern = "#^\<\?xml(.*?)\?\>#i"; // xml declaration
-	$replacement = '<?xml version="1.0" encoding="utf-8" ?>';
-	$string = preg_replace($pattern, $replacement, $string);
-	*/
+	
 	return strtr($string, $translate);
 }
 
