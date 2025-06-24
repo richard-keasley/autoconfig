@@ -1,18 +1,20 @@
 # autoconfig
 
+Allows email clients (specifically Thunderbird) to get settings for an email client based upon the supplied email address.
+
 ## usage
 
 ### index.php and .htaccess
 
 Create sub-domains autoconfig.example.co.uk and .example.co.uk.
 
-Place the contents of folder _\_root\index.php_ and _\_root\\.htaccess_ in the document root for both of these 2 sub-domains' web spaces.
+Place the files _\index.php_ and _\\.htaccess_ in the document root for both of these 2 sub-domains' web spaces.
 
 Ensure the `require_once` line in _index.php_ points to the autoconfig folder.
 
 cPanel allows you to use the same folder for more than one sub-domain; you may not need to copy anything.
 
-Edit _\autoconfig\config\default.php_ according to your email server.
+Edit _\autoconfig\config\default.php_ according to your email server. Note: Ensure DOMAINS shows all email domains you wish to allow.
 
 Any requests to 
 _autoconfig.example.co.uk/xxx/config-v1.1.xml_ 
