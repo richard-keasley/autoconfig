@@ -4,17 +4,21 @@
 
 ### index.php and .htaccess
 
-Create sub-domains autoconfig.example.co.uk and autodiscover.example.co.uk.
+Create sub-domains autoconfig.example.co.uk and .example.co.uk.
 
-Place the contents of folder _\_root\index.php_ and _\_root\.htaccess_ in the document root for both of these 2 sub-domains' web spaces.
+Place the contents of folder _\_root\index.php_ and _\_root\\.htaccess_ in the document root for both of these 2 sub-domains' web spaces.
 
 Ensure the `require_once` line in _index.php_ points to the autoconfig folder.
 
 cPanel allows you to use the same folder for more than one sub-domain; you may not need to copy anything.
 
-Edit _\autoconfig\config-default.php_ according to your email server.
+Edit _\autoconfig\config\default.php_ according to your email server.
 
-Any request to _autoconfig.example.co.uk/xxx/config-v1.1.xml_ will receive an appropriate reply, no matter what path is requested.
+Any requests to 
+_autoconfig.example.co.uk/xxx/config-v1.1.xml_ 
+and 
+_autodiscover.example.co.uk/xxx/autodiscover.xml_ 
+will receive an appropriate reply, no matter what path is requested.
 
 ## resources / further reading
 
