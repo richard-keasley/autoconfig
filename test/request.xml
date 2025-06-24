@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Autodiscover
+	xmlns="http://schemas.microsoft.com/exchange/autodiscover/outlook/requestschema/2006">
+	<Request>
+		<AcceptableResponseSchema>
+		http://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a
+		</AcceptableResponseSchema>
+		<EMailAddress>johndoe@example.co.uk</EMailAddress>
+	</Request>
+</Autodiscover>

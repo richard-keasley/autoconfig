@@ -6,7 +6,7 @@
 
 Create sub-domains autoconfig.example.co.uk and autodiscover.example.co.uk.
 
-Place _index.php_ and _.htaccess_ in the document root for both of these 2 web spaces.
+Place the contents of folder _\_root\index.php_ and _\_root\.htaccess_ in the document root for both of these 2 sub-domains' web spaces.
 
 Ensure the `require_once` line in _index.php_ points to the autoconfig folder.
 
