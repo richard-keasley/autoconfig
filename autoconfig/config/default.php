@@ -5,7 +5,7 @@ $config = [
 	'EMAIL' => '{emailaddress}',
 	
 	'TEST' => [
-		'XML-POST' => 'request.xml',
+		 // 'XML-POST' => 'request.xml',
 	],
 	
 	'INFO' => [
