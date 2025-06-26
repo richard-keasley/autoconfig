@@ -57,9 +57,9 @@ https://autoconfig.freenet.de/?emailaddress=john@freenet.de
 
 TB checks these URLs. 
 
-- https://example.co.uk/.well-known/autoconfig/mail/config-v1.1.xml?emailaddress=johndoe%40example.com
-- https://autoconfig.example.co.uk/mail/config-v1.1.xml?emailaddress=johndoe%40example.com
-- https://johndoe%40example.com@autodiscover.example.co.uk/autodiscover/autodiscover.xml
-- https://johndoe%40example.com@example.co.uk/autodiscover/autodiscover.xml
+- https://example.co.uk/.well-known/autoconfig/mail/config-v1.1.xml?emailaddress=johndoe%40example.co.uk
+- https://autoconfig.example.co.uk/mail/config-v1.1.xml?emailaddress=johndoe%40example.co.uk
+- https://johndoe%40example.co.uk@autodiscover.example.co.uk/autodiscover/autodiscover.xml
+- https://johndoe%40example.co.uk@example.co.uk/autodiscover/autodiscover.xml
 
-Ctrl+Shift+I opens TB's Developer tools console. Then watch the network tab to see the requests / responses. 
+Ctrl+Shift+I opens TB's Developer tools console. Then watch the network tab to see the TB's requests and server responses. 
