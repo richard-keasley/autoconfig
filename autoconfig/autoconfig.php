@@ -82,7 +82,8 @@ function get_response() {
 		$filetype = $pathinfo['extension'] ?? 'txt' ;
 		if($basename) break;
 	}
-	if(!$basename) throw new Exception("Unsupported request");
+	if($basename) $basename = strtolower($basename);
+	else throw new Exception("Unsupported request");
 	
 	// check domain is supported
 	$config = $this->config['INFO']['DOMAINS'] ?? null;

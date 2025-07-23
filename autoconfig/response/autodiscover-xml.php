@@ -2,13 +2,13 @@
 isset($this) or die;
 
 $xml = new SimpleXMLElement('<Autodiscover/>');
-$xml->addAttribute('xmlns',
-"http://schemas.microsoft.com/exchange/autodiscover/responseschema/2006id");
 
+$xml->addAttribute('xmlns', "http://schemas.microsoft.com/exchange/autodiscover/responseschema/2006");
+$xml->addAttribute('xmlns:xsd', "http://www.w3.org/2001/XMLSchema");
+$xml->addAttribute('xmlns:xsi', "http://www.w3.org/2001/XMLSchema-instance");
 
 $response = $xml->addChild('Response');
-$response->addAttribute('xmlns',
- "http://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a");
+$response->addAttribute('xmlns', "http://schemas.microsoft.com/exchange/autodiscover/outlook/responseschema/2006a");
 
 $account = $response->addChild('Account');
 $account->addChild('AccountType', 'email');
