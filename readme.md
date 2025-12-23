@@ -1,6 +1,6 @@
 # autoconfig
 
-Allows email clients (specifically Thunderbird) to get settings for an email client based upon the supplied email address.
+Allows email clients (specifically Thunderbird) to get connection settings based upon the supplied email address.
 
 ## usage
 
@@ -63,3 +63,4 @@ TB checks these URLs.
 - https://johndoe%40example.co.uk@example.co.uk/autodiscover/autodiscover.xml
 
 `Ctrl+Shift+I` opens TB's Developer tools console. Then watch TB's requests and server's responses in the network tab.
+
